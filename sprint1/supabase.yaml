@@ -1,0 +1,203 @@
+openapi: 3.0.1
+info: 
+  title: Travel-Buddies API
+  description: |-
+    A vanilla databasing API using expressJS & SupaBase with the following endpoints. 
+    * `GET /users`
+    * `GET /trips`
+    * `GET user/{id}`
+    * `GET trip/{id}`
+    * `GET user/{id}/travel-buddies`
+    
+    # Overview
+    * Firstly it sounds cool to implement endpoints. 
+    * You can use this for educational/learning purposes to get that initial boost into databasing. 
+    
+    # Mission Statement
+    
+
+    _`Keep Databasing!`_
+  version: '1.0.0'
+servers:
+  - url: http://localhost:3000
+paths:
+  /users:
+    get:
+      description: Lookup all the `users`.
+      # parameters:
+      #   - in: path
+      #     name: shaHash
+      #     required: true
+      #     schema:
+      #       type: string
+      #     example: e84c538e7fe250730ef62de220c40dfa808d3008c0cdb437181564b88b8714b8
+      responses:
+        '200':
+          description: Successfully found `users`
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    format: uuid
+                  name:
+                    type: string
+                  email: 
+                    type: string
+                  
+              examples:
+                '0':
+                  value: >-
+                    [{"id":"52d5d3de-9e54-4847-a56d-540f1a30e4e6","name":"Souvik Das","email":"dassou@oregonstate.edu"},{"id":"f1b14023-6fed-4f75-800f-f16231420c4b","name":"Sahana N H","email":"sahananh@gmail.com"}]
+
+        '500':
+          description: Error occurred while fetching `user` data
+              
+  /trips:
+    get: 
+      description: Lookup all the `trips`
+      # parameters:
+      #   - in: path
+      #     name: shaHash
+      #     required: true
+      #     schema:
+      #       type: string
+      #     example: e84c538e7fe250730ef62de220c40dfa808d3008c0cdb437181564b88b8714b8
+      responses:
+        '200':
+          description: Successfully found `trips`
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    format: uuid
+                  name:
+                    type: string
+                  destination:
+                    type: string
+                  start date: 
+                    type: string
+                    format: date(yyyy/mm/dd)
+                  end date: 
+                    type: string
+                    format: date(yyyy/mm/dd)
+              examples:
+                '0':
+                  value: >-
+                    [{"id":"2100e8ef-07a4-4935-9c65-d8ddc4d25aa2","name":"City of Joy","destination":"Kolkata","start date":"2023-10-25","end date":"2023-10-31"}]
+
+        '500':
+          description: Error occurred while fetching `trip` data
+
+  /user/{id}:
+    get: 
+      description: Lookup a specific user `id`
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+            format: uuid
+          example: 
+            f1b14023-6fed-4f75-800f-f16231420c4b
+      responses:
+        '200':
+          description: Successfully found the user `id`
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    format: uuid
+                  name:
+                    type: string
+                  email: 
+                    type: string
+              examples:
+                '0':
+                  value: >-
+                    {"id":"f1b14023-6fed-4f75-800f-f16231420c4b","name":"Sahana N H","email":"sahananh@gmail.com"}
+
+        '500':
+          description: Error occurred while fetching user `id` data
+
+  /trip/{id}:
+    get: 
+      description: Lookup a specific trip `id`
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+            format: uuid
+          example: 
+            2100e8ef-07a4-4935-9c65-d8ddc4d25aa2
+      responses:
+        '200':
+          description: Successfully found the trip `id`
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    format: uuid
+                  name:
+                    type: string
+                  destination:
+                    type: string
+                  start date: 
+                    type: string
+                    format: date(yyyy/mm/dd)
+                  end date: 
+                    type: string
+                    format: date(yyyy/mm/dd)
+              examples:
+                '0':
+                  value: >-
+                    {"id":"2100e8ef-07a4-4935-9c65-d8ddc4d25aa2","name":"City of Joy","destination":"Kolkata","start date":"2023-10-25","end date":"2023-10-31"}
+
+        '500':
+          description: Error occurred while fetching trip `id` data
+
+  /user/{id}/travel-buddies:
+    get: 
+      description: Lookup a specific `user` travel buddies
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+            format: uuid
+          example: 
+            52d5d3de-9e54-4847-a56d-540f1a30e4e6
+      responses:
+        '200':
+          description: Successfully found the `user` travel buddies
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  user_id:
+                    type: string
+                    format: uuid
+
+              examples:
+                '0':
+                  value: >-
+                    [{"user_id":"52d5d3de-9e54-4847-a56d-540f1a30e4e6"},{"user_id":"f1b14023-6fed-4f75-800f-f16231420c4b"}]
+
+        '500':
+          description: Error occurred while fetching `user` travel buddies
