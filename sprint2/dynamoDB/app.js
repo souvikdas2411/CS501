@@ -1,3 +1,4 @@
+//Note to self: Delete the access keys once done. Accidentaly exposed them on GitHub
 const express = require('express');
 const AWS = require('aws-sdk');
 const bodyParser = require('body-parser');
