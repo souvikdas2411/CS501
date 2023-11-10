@@ -34,7 +34,7 @@ app.post('/createUser', (req, res) => {
     email 
   };
 
-  const params = {
+  params = {
     TableName: User,
     Item: user,
   };
@@ -90,7 +90,7 @@ app.post('/createRelation', (req, res) => {
     user_id
   };
 
-  const params = {
+  params = {
     TableName: Relation,
     Item: relation,
   };
@@ -106,4 +106,101 @@ app.post('/createRelation', (req, res) => {
     }
   });
 });
+
+app.get('/users', (req, res) => {
+  params = {
+    TableName: User,
+  };
+
+  // Scan the User table to get all users
+  dynamodb.scan(params, (err, data) => {
+    if (err) {
+      console.error('Error scanning users from DynamoDB:', err);
+      res.status(500).json({ error: 'Could not retrieve users' });
+    } else {
+      console.log('Users retrieved successfully');
+      res.status(200).json(data.Items); // Return the array of users
+    }
+  });
+});
+
+app.get('/user/:id', (req, res) => {
+  const { id } = req.params;
+
+  const params = {
+    TableName: User,
+    Key: {
+      id: id,
+    },
+  };
+
+  // Get a specific user by their id
+  dynamodb.get(params, (err, data) => {
+    if (err) {
+      console.error(`Error getting user with id ${id} from DynamoDB:`, err);
+      res.status(500).json({ error: 'Could not retrieve user' });
+    } else {
+      if (data.Item) {
+        console.log(`User with id ${id} retrieved successfully`);
+        res.status(200).json(data.Item); // Return the user as JSON
+      } else {
+        console.log(`User with id ${id} not found`);
+        res.status(404).json({ message: 'User not found' });
+      }
+    }
+  });
+});
+
+app.get('/trips', (req, res) => {
+  params = {
+    TableName: Trip,
+  };
+
+  // Scan the User table to get all trips
+  dynamodb.scan(params, (err, data) => {
+    if (err) {
+      console.error('Error scanning trips from DynamoDB:', err);
+      res.status(500).json({ error: 'Could not retrieve trips' });
+    } else {
+      console.log('Trips retrieved successfully');
+      res.status(200).json(data.Items); // Return the array of users
+    }
+  });
+});
+
+app.get('/user/:userId/travel-buddies', async (req, res) => {
+  try {
+    const userId = req.params.userId;
+
+    // Scan the relations table to find items where user_id contains the specified userId
+    const params = {
+      TableName: Relation,
+      FilterExpression: 'contains(user_id, :userId)',
+      ExpressionAttributeValues: {
+        ':userId': userId,
+      },
+    };
+
+    dynamodb.scan(params, (err, data) => {
+      if (err) {
+      console.error('Error scanning trips from DynamoDB:', err);
+      res.status(500).json({ error: 'Could not retrieve trips' });
+      } else {
+      console.log('Trips retrieved successfully');
+      res.status(200).json(data.Items); // Return the array of users
+      }
+    });
+
+    // const data = await dynamoDB.scan(params).promise();
+
+    // // Extract the items from the response
+    // const relations = data.Items;
+
+    // res.status(200).json(relations);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Error fetching travel-buddies' });
+  }
+});
+
 
