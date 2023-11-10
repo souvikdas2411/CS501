@@ -4,7 +4,7 @@ const { Schema } = mongoose;
 
 const app = express();
 const port = 3000; 
-const mongoURI = ''; // Replace with your MongoDB connection URI
+const mongoURI = '';
 
 async function connectToDatabase() {
   try {
@@ -193,7 +193,7 @@ app.get('/trip/:tripId', async (req, res) => {
 app.get('/user/:userId/travel-buddies', async (req, res) => {
   try {
     const userId = req.params.userId;
-    const relations = await Relation.find({ user_id: userId }).populate('user_id');
+    const relations = await Relation.find({ user_id: userId }).populate(['user_id', 'trip_id']);
     console.log(relations);
     res.status(200).json(relations);
   } catch (err) {

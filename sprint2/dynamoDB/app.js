@@ -1,4 +1,4 @@
-//Note to self: Delete the access keys once done. Accidentaly exposed them on GitHub
+//Note to self: Delete the access keys once done.
 const express = require('express');
 const AWS = require('aws-sdk');
 const bodyParser = require('body-parser');
@@ -190,17 +190,8 @@ app.get('/user/:userId/travel-buddies', async (req, res) => {
       res.status(200).json(data.Items); // Return the array of users
       }
     });
-
-    // const data = await dynamoDB.scan(params).promise();
-
-    // // Extract the items from the response
-    // const relations = data.Items;
-
-    // res.status(200).json(relations);
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: 'Error fetching travel-buddies' });
   }
 });
-
-
