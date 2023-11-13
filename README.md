@@ -1,10 +1,10 @@
 ## CS501 - Fall 2023
 
-This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Braynen. 
+This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Braynen. :mortar_board: 
 
 ## Folders
 
-:file_folder: **sprint1** - Supabase ::snowman:: implementations(localhost) 
+:file_folder: **sprint1** - Supabase :snowman: implementations(localhost) 
 
 :file_folder: **sprint2** - mongoDB :leaves: & dynamoDB :zap: implementations(localhost)
 
