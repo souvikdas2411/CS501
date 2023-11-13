@@ -3,9 +3,8 @@
 This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Braynen. :mortar_board: 
 
 ## Folders
-
-:file_folder: **sprint1** - Supabase :snowman: implementations(localhost) 
-<details><summary>Expand</summary>
+ 
+<details><summary>:file_folder: **sprint1** - Supabase :snowman: implementations(localhost)</summary>
 
 - Supabase :snowman: implementations(localhost) 
 
@@ -73,8 +72,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 		</details>	
 </details> 
 
-:file_folder: **sprint2** - mongoDB :leaves: & dynamoDB :zap: implementations(localhost)
-<details><summary>Expand</summary>
+<details><summary>:file_folder: **sprint2** - mongoDB :leaves: & dynamoDB :zap: implementations(localhost)</summary>
 
 - mongoDB :leaves: implementations(localhost)
 
