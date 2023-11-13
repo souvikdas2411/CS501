@@ -12,7 +12,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 
 - :snowman: Supabase implementations(localhost) 
 
-	- `GET /users`:bust_in_silhouette: 
+	- `GET /users` :busts_in_silhouette: 
 		<details><summary>Example value</summary>
 
 		```json
@@ -32,7 +32,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 
 		</details>
 	
-	- `GET /trips`
+	- `GET /trips` :mount_fuji:
 		<details><summary>Example value</summary>
 
 		```json
@@ -48,7 +48,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 		```
 		</details>
 
-	- `GET /user/:id`
+	- `GET /user/:id`:bust_in_silhouette:
 		<details><summary>Example value</summary>
 
 		```json
@@ -60,7 +60,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 		```
 		</details>
 
-	- `GET /user/:id/travel-buddies`
+	- `GET /user/:id/travel-buddies` :couple:
 		<details><summary>Example value</summary>
 
 		```json
@@ -77,7 +77,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 
 - :leaves: mongoDB implementations(localhost)
 
-	- `GET /users` :bust_in_silhouette:
+	- `GET /users` :busts_in_silhouette:
 		<details><summary>Example value</summary>
 
 		```json
@@ -100,7 +100,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 
 		</details>
 
-	- `GET /trips`
+	- `GET /trips` :mount_fuji:
 		<details><summary>Example value</summary>
 
 		```json
@@ -135,7 +135,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 
 		</details>
 
-	- `GET /user/:id`
+	- `GET /user/:id` :bust_in_silhouette:
 		<details><summary>Example value</summary>
 
 		```json
@@ -153,7 +153,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 
 		</details>
 
-	- `GET /user/:id/travel-buddies`
+	- `GET /user/:id/travel-buddies` :couple:
 		<details><summary>Example value</summary>
 
 		```json
