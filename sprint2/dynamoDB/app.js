@@ -2,15 +2,16 @@
 const express = require('express');
 const AWS = require('aws-sdk');
 const bodyParser = require('body-parser');
+const { v4: uuidv4 } = require('uuid'); // Import the UUID library
 
 const app = express();
 app.use(bodyParser.json());
 
 // Set up AWS DynamoDB configuration
 AWS.config.update({
-  region: 'us-east-2', // e.g., 'us-east-1'
-  accessKeyId: 'AKIASQ65LCLWK7OXLVVJ',
-  secretAccessKey: 'Wp8cX8aXaoA1VXPXr9WSQXqI2a01PanTknmkGByM',
+  region: 'us-east-2',
+  accessKeyId: 'AKIASQ65LCLWKJCEI4IQ',
+  secretAccessKey: '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',
 });
 
 const dynamodb = new AWS.DynamoDB.DocumentClient();
@@ -25,25 +26,34 @@ app.listen(3000, () => {
 });
 
 app.post('/createUser', (req, res) => {
-  const { id, name, email } = req.body;
+  const { name, email } = req.body;
+
+  const id = uuidv4();
 
   // Create a new user object
   const user = {
     id,
     name,
-    email 
+    email,
   };
 
-  params = {
+  const params = {
     TableName: User,
     Item: user,
+    ConditionExpression: 'attribute_not_exists(id)', // Check if the 'id' does not already exist
   };
 
-  // Put the user data into DynamoDB
+  // Put the user data into DynamoDB with the condition
   dynamodb.put(params, (err, data) => {
     if (err) {
-      console.error('Error putting user into DynamoDB:', err);
-      res.status(500).json({ error: 'Could not create user' });
+      if (err.code === 'ConditionalCheckFailedException') {
+        // The 'id' already exists, return a 409 Conflict response
+        console.error(`User with id ${id} already exists.`);
+        res.status(409).json({ error: 'User with the same id already exists' });
+      } else {
+        console.error('Error putting user into DynamoDB:', err);
+        res.status(500).json({ error: 'Could not create user' });
+      }
     } else {
       console.log('User created successfully');
       res.status(200).json({ message: 'User created successfully' });
@@ -52,7 +62,9 @@ app.post('/createUser', (req, res) => {
 });
 
 app.post('/createTrip', (req, res) => {
-  const { id, name, dest, start, end } = req.body;
+  const { name, dest, start, end } = req.body;
+
+  const id = uuidv4();
 
   // Create a new trip object
   const trip = {
@@ -60,19 +72,26 @@ app.post('/createTrip', (req, res) => {
     name,
     dest,
     start,
-    end 
+    end,
   };
 
   const params = {
     TableName: Trip,
     Item: trip,
+    ConditionExpression: 'attribute_not_exists(id)', // Check if the 'id' does not already exist
   };
 
-  // Put the user trip into DynamoDB
+  // Put the trip data into DynamoDB with the condition
   dynamodb.put(params, (err, data) => {
     if (err) {
-      console.error('Error putting trip into DynamoDB:', err);
-      res.status(500).json({ error: 'Could not create Trp' });
+      if (err.code === 'ConditionalCheckFailedException') {
+        // The 'id' already exists, return a 409 Conflict response
+        console.error(`Trip with id ${id} already exists.`);
+        res.status(409).json({ error: 'Trip with the same id already exists' });
+      } else {
+        console.error('Error putting trip into DynamoDB:', err);
+        res.status(500).json({ error: 'Could not create Trip' });
+      }
     } else {
       console.log('Trip created successfully');
       res.status(200).json({ message: 'Trip created successfully' });
@@ -80,32 +99,43 @@ app.post('/createTrip', (req, res) => {
   });
 });
 
-app.post('/createRelation', (req, res) => {
-  const { id, trip_id, user_id } = req.body;
 
-  // Create a new user object
+app.post('/createRelation', (req, res) => {
+  const { trip_id, user_id } = req.body;
+
+  const id = uuidv4();
+
+  // Create a new relation object
   const relation = {
     id,
     trip_id,
-    user_id
+    user_id,
   };
 
-  params = {
+  const params = {
     TableName: Relation,
     Item: relation,
+    ConditionExpression: 'attribute_not_exists(id)', // Check if the 'id' does not already exist
   };
 
-  // Put the relation data into DynamoDB
+  // Put the relation data into DynamoDB with the condition
   dynamodb.put(params, (err, data) => {
     if (err) {
-      console.error('Error putting relation into DynamoDB:', err);
-      res.status(500).json({ error: 'Could not create relation' });
+      if (err.code === 'ConditionalCheckFailedException') {
+        // The 'id' already exists, return a 409 Conflict response
+        console.error(`Relation with id ${id} already exists.`);
+        res.status(409).json({ error: 'Relation with the same id already exists' });
+      } else {
+        console.error('Error putting relation into DynamoDB:', err);
+        res.status(500).json({ error: 'Could not create relation' });
+      }
     } else {
-      console.log('relation created successfully');
-      res.status(200).json({ message: 'relation created successfully' });
+      console.log('Relation created successfully');
+      res.status(200).json({ message: 'Relation created successfully' });
     }
   });
 });
+
 
 app.get('/users', (req, res) => {
   params = {
