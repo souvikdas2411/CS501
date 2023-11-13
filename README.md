@@ -238,6 +238,24 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 		> | end | not required | Date | Trip end date(auto generated atm) | 
 
 		</details>
+
+	- `POST /createRelation`
+		<details><summary>Example body</summary>
+
+		```json
+		{
+		  "trip_id": "f056f220-6e99-49f9-82d3-4ebe1d153509",
+		  "user_id": "[eeb8d75c-502f-4ef3-be15-1febf4e486d3, 4fe96572-cb5c-43e8-91f4-2c4973b25f2b]"
+		}
+		``` 
+		##### Parameters
+		> | name | type | data type | description |
+		> |------|------|-----------|-------------|
+		> | id | not required | UUID | Relation's unique id(auto generated) |
+		> | trip_id | required | UUID | Trip's unique id |
+		> | user_id | required | [UUID] | An array of user_id of the users who went on the trip | 
+
+		</details>
 </details>
 
 
