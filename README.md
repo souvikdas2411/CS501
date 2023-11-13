@@ -35,8 +35,8 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 
 	- `GET /users`
 	<details>
-		<summary>
-
+		<summary></summary>>
+		
 			```json
 				[
 				  {
@@ -46,8 +46,8 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 				  }
 				]
 			```
+
 		
-		</summary>>
 	</details>
 	
 	- `GET /trips`
