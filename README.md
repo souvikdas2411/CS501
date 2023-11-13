@@ -10,6 +10,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 		- `GET /trips` 
 		- `GET /user/:id` 
 		- `GET user/:id/travel-buddies`
+		
 - sprint2 
 	- mongoDB implementaions(localhost)
 		- `GET /users` 
