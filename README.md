@@ -4,8 +4,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 
 ## Folders
 
-:file_folder: **sprint1** - Supabase :snowman: implementations(localhost)
-<details><summary>Expand</summary>
+:file_folder: **sprint1** - Supabase :snowman: implementations(localhost) <details><summary>Expand</summary>
 
 - Supabase :snowman: implementations(localhost) 
 
@@ -76,71 +75,6 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 :file_folder: **sprint2** - mongoDB :leaves: & dynamoDB :zap: implementations(localhost)
 
 ## Overview
-
-- Supabase :snowman: implementations(localhost) 
-
-	- `GET /users` :busts_in_silhouette: 
-		<details><summary>Example value</summary>
-
-		```json
-		[
-		  {
-		    "id": "52d5d3de-9e54-4847-a56d-540f1a30e4e6",
-		    "name": "Souvik Das",
-		    "email": "dassou@oregonstate.edu"
-		  },
-		  {
-		    "id": "f1b14023-6fed-4f75-800f-f16231420c4b",
-		    "name": "Sahana N H",
-		    "email": "sahananh@gmail.com"
-		  }
-		]
-		```
-
-		</details>
-	
-	- `GET /trips` :mount_fuji:
-		<details><summary>Example value</summary>
-
-		```json
-		[
-		  {
-		    "id": "2100e8ef-07a4-4935-9c65-d8ddc4d25aa2",
-		    "name": "City of Joy",
-		    "destination": "Kolkata",
-		    "start date": "2023-10-25",
-		    "end date": "2023-10-31"
-		  }
-		]
-		```
-		</details>
-
-	- `GET /user/:id`:bust_in_silhouette:
-		<details><summary>Example value</summary>
-
-		```json
-		{
-		  "id": "f1b14023-6fed-4f75-800f-f16231420c4b",
-		  "name": "Sahana N H",
-		  "email": "sahananh@gmail.com"
-		}
-		```
-		</details>
-
-	- `GET /user/:id/travel-buddies` :couple:
-		<details><summary>Example value</summary>
-
-		```json
-		[
-		  {
-		    "user_id": "52d5d3de-9e54-4847-a56d-540f1a30e4e6"
-		  },
-		  {
-		    "user_id": "f1b14023-6fed-4f75-800f-f16231420c4b"
-		  }
-		]
-		```
-		</details>
 
 - mongoDB :leaves: implementations(localhost)
 
