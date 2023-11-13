@@ -4,10 +4,10 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 
 ### Folders
 
-- **sprint1** 
+- :file_folder: **sprint1** 
 	- Supabase implementations(localhost) 
 
-- **sprint2** 
+- :file_folder: **sprint2** 
 	- mongoDB implementations(localhost)
 	- dynamoDB implementations(localhost)
 
