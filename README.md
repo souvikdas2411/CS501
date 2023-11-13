@@ -6,28 +6,28 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 
 - **sprint1** 
 	- _Supabase implementaions(localhost)_ 
-		- `GET /users` <details>this is a test</details>>
-		- `GET /trips` 
-		- `GET /user/:id` 
-		- `GET user/:id/travel-buddies`
+		- `GET /users` <details>Description</details>
+		- `GET /trips` <details>Description</details>
+		- `GET /user/:id`<details>Description</details>
+		- `GET user/:id/travel-buddies`<details>Description</details>
 
 - **sprint2** 
 	- _mongoDB implementaions(localhost)_
-		- `GET /users` 
-		- `GET /trips`
-		- `GET /user/:id`
-		- `GET user/:id/travel-buddies`
-		- `POST /createUser` 
-		- `POST /createTrip`
+		- `GET /users`<details>Description</details> 
+		- `GET /trips`<details>Description</details>
+		- `GET /user/:id`<details>Description</details>
+		- `GET user/:id/travel-buddies`<details>Description</details>
+		- `POST /createUser`<details>Description</details> 
+		- `POST /createTrip`<details>Description</details>
 	
 	- _dynamoDB implementaions(localhost)_
-		- `GET /users` 
-		- `GET /trips`
-		- `GET /user/:id`
-		- `GET user/:id/travel-buddies`
-		- `POST /createUser` 
-		- `POST /createTrip`
-		- `POST /createRelation`
+		- `GET /users`<details>Description</details> 
+		- `GET /trips`<details>Description</details>
+		- `GET /user/:id`<details>Description</details>
+		- `GET user/:id/travel-buddies`<details>Description</details>
+		- `POST /createUser`<details>Description</details> 
+		- `POST /createTrip`<details>Description</details>
+		- `POST /createRelation`<details>Description</details>
 
 ## Schemas
 
