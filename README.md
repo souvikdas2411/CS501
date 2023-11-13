@@ -4,7 +4,8 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 
 ## Folders
 
-:file_folder: **sprint1** - Supabase :snowman: implementations(localhost) <details><summary>Expand</summary>
+:file_folder: **sprint1** - Supabase :snowman: implementations(localhost) 
+<details><summary>Expand</summary>
 
 - Supabase :snowman: implementations(localhost) 
 
@@ -73,8 +74,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 </details> 
 
 :file_folder: **sprint2** - mongoDB :leaves: & dynamoDB :zap: implementations(localhost)
-
-## Overview
+<details><summary>Expand</summary>
 
 - mongoDB :leaves: implementations(localhost)
 
@@ -240,4 +240,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 		> | end | not required | Date | Trip end date(auto generated atm) | 
 
 		</details>
+</details>
+
+## Overview
 
