@@ -45,12 +45,12 @@ const tripSchema = new Schema({
     unique: false,
   },
   start_date: {
-    type: String,
+    type: Date,
     required: true,
     unique: false,
   },
   end_date: {
-    type: String,
+    type: Date,
     required: true,
     unique: false,
   }
