@@ -62,7 +62,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 		```
 		</details>
 
-	- `GET user/:id/travel-buddies`
+	- `GET /user/:id/travel-buddies`
 		<details><summary>Example schema</summary>
 
 		```json
@@ -132,7 +132,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 		```
 		</details>
 
-	- `GET user/:id/travel-buddies`
+	- `GET /user/:id/travel-buddies`
 		<details><summary>Example schema</summary>
 
 		```json
@@ -163,6 +163,24 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 			        ]
 			    }
 			]
+		``` 
+		</details>
+
+	- `POST /createUser`
+		<details><summary>Example schema</summary>
+
+		```javascript
+			const userSchema = new Schema({
+			  name: {
+			    type: String,
+			    required: true,
+			  },
+			  email: {
+			    type: String,
+			    required: true,
+			    unique: true,
+			  },
+			});
 		``` 
 		</details>
 
