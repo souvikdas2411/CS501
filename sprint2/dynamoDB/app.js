@@ -62,9 +62,15 @@ app.post('/createUser', (req, res) => {
 });
 
 app.post('/createTrip', (req, res) => {
-  const { name, dest, start, end } = req.body;
+  const { name, dest } = req.body;
 
   const id = uuidv4();
+  const start = new Date().toISOString();; // Get the current date and time
+  const end = new Date(start);
+    
+  // Add 30 days to the current date
+  end.setDate(end.getDate() + 30);
+  const endISO = end.toISOString();
 
   // Create a new trip object
   const trip = {
@@ -72,7 +78,7 @@ app.post('/createTrip', (req, res) => {
     name,
     dest,
     start,
-    end,
+    end: endISO,
   };
 
   const params = {
