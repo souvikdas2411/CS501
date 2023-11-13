@@ -1,7 +1,8 @@
 ## CS501 - Fall 2023
 
 This is the CS501 Research Credit Fall 2023 repository.<br>
-Advisor - Will Braynen
+Advisor - Will Braynen<br>
+Databases explored - Supabase, mongoDB, dynamoDB
 
 ## Folders
  
