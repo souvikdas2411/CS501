@@ -4,13 +4,13 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 
 ## Folders
 
-:file_folder: **sprint1** - Supabase implementations(localhost) 
+:file_folder: **sprint1** - Supabase ::snowman:: implementations(localhost) 
 
-:file_folder: **sprint2** - mongoDB & dynamoDB implementations(localhost)
+:file_folder: **sprint2** - mongoDB :leaves: & dynamoDB :zap: implementations(localhost)
 
 ## Schemas
 
-- :snowflake: Supabase implementations(localhost) 
+- :snowman: Supabase implementations(localhost) 
 
 	- `GET /users` 
 		<details><summary>Example schema</summary>
@@ -163,7 +163,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 		``` 
 		</details>
 
-- :snowflake: dynamoDB implementations(localhost)
+- :zap: dynamoDB implementations(localhost)
 
 	- `POST /createUser`
 		<details><summary>Example schema</summary>
