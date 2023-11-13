@@ -6,7 +6,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 
 - **sprint1** 
 	- _Supabase implementaions(localhost)_ 
-		- `GET /users` <details>Description</details>
+		- `GET /users` <desc>Description</desc>
 		- `GET /trips` <details>Description</details>
 		- `GET /user/:id`<details>Description</details>
 		- `GET user/:id/travel-buddies`<details>Description</details>
