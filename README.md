@@ -7,18 +7,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 - sprint1 
 	- Supabase implementaions(localhost) 
 		- `GET /users`
-			- `[
-  {
-    "id": "52d5d3de-9e54-4847-a56d-540f1a30e4e6",
-    "name": "Souvik Das",
-    "email": "dassou@oregonstate.edu"
-  },
-  {
-    "id": "f1b14023-6fed-4f75-800f-f16231420c4b",
-    "name": "Sahana N H",
-    "email": "sahananh@gmail.com"
-  }
-]`
+			- `[{"id": "52d5d3de-9e54-4847-a56d-540f1a30e4e6","name": "Souvik Das","email": "dassou@oregonstate.edu"}]`
 		- `GET /trips` 
 		- `GET /user/:id` 
 		- `GET user/:id/travel-buddies`
