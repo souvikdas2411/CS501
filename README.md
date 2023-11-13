@@ -1,19 +1,19 @@
-## CS501 - Fall 2023
+### CS501 - Fall 2023
 
 This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Braynen. 
 
-## Folders
+### Folders
 
 - **sprint1** 
-	- Supabase implementaions(localhost) 
+	- Supabase implementations(localhost) 
 
 - **sprint2** 
-	- mongoDB implementaions(localhost)
-	- dynamoDB implementaions(localhost)
+	- mongoDB implementations(localhost)
+	- dynamoDB implementations(localhost)
 
-## Schemas
+### Schemas
 
-- Supabase implementaions(localhost)
+- Supabase implementations(localhost)
 
 	- `GET /users` 
 		<details><summary>Example schema</summary>
@@ -77,7 +77,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 		```
 		</details>
 
-- mongoDB implementaions(localhost)
+- mongoDB implementations(localhost)
 
 	- `GET /users`
 		<details><summary>Example schema</summary>
@@ -166,20 +166,49 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 		``` 
 		</details>
 
+- dynamoDB implementations(localhost)
+
 	- `POST /createUser`
 		<details><summary>Example schema</summary>
 
+		```json
+			{
+			  "name": "Biswajit Das",
+			  "email": "bis@email.com"
+			}
+		``` 
+		##### Parameters
+		> | name | type | data type |
+		> |------|------|-----------|
+		> | name | required | String |
+		> | email| required | String |
+
+		</details>
+
+	- `POST /createTrip`
+		<details><summary>Example schema</summary>
+
 		```javascript
-			const userSchema = new Schema({
+			const tripSchema = new Schema({
 			  name: {
 			    type: String,
 			    required: true,
 			  },
-			  email: {
+			  destination: {
 			    type: String,
 			    required: true,
-			    unique: true,
+			    unique: false,
 			  },
+			  start_date: {
+			    type: Date,
+			    required: true,
+			    unique: false,
+			  },
+			  end_date: {
+			    type: Date,
+			    required: true,
+			    unique: false,
+			  }
 			});
 		``` 
 		##### Parameters
