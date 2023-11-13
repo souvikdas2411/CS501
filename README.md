@@ -74,7 +74,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 		```
 		</details>
 
-- :snowflake: mongoDB implementations(localhost)
+- :leaves: mongoDB implementations(localhost)
 
 	- `GET /users`
 		<details><summary>Example schema</summary>
