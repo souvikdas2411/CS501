@@ -9,7 +9,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 :file_folder: **sprint2** - mongoDB :leaves: & dynamoDB :zap: implementations(localhost)
 
 
-```toggle
+```{toggle}
 hello
 ```
 
