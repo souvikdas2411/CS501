@@ -31,14 +31,22 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 
 ## Schemas
 
-```javascript 
-		[{"id": "52d5d3de-9e54-4847-a56d-540f1a30e4e6","name": "Souvik Das","email": "dassou@oregonstate.edu"}]
-```
 - _Supabase implementaions(localhost)_
 	- `GET /users`
-		- ```javascript 
-		[{"id": "52d5d3de-9e54-4847-a56d-540f1a30e4e6","name": "Souvik Das","email": "dassou@oregonstate.edu"}]
-		```
+```json
+[
+  {
+    "id": "52d5d3de-9e54-4847-a56d-540f1a30e4e6",
+    "name": "Souvik Das",
+    "email": "dassou@oregonstate.edu"
+  },
+  {
+    "id": "f1b14023-6fed-4f75-800f-f16231420c4b",
+    "name": "Sahana N H",
+    "email": "sahananh@gmail.com"
+  }
+] 
+```
 	- `GET /trips`
 		- `[{
 			    "id": "2100e8ef-07a4-4935-9c65-d8ddc4d25aa2",
