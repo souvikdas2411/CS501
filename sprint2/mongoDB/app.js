@@ -127,11 +127,17 @@ async function createUser() {
 
 async function createTrip() {
   try {
+    const currentDate = new Date(); // Get the current date and time
+    const endDate = new Date(currentDate);
+    
+    // Add 30 days to the current date
+    endDate.setDate(endDate.getDate() + 30);
+
     const newTrip = new Trip({
-      name: 'COJ2',
+      name: 'COJ3',
       destination: 'Kolkata',
-      start_date: 'New Year 2024', //Using string to avoid unnecessary complication and also because i do not understand the 0000:00:000 whatever format
-      end_date: 'Jam 28th 2024'
+      start_date: currentDate, // Use the current date
+      end_date: endDate, // Use the date 30 days later
     });
 
     const savedTrip = await newTrip.save();
