@@ -178,10 +178,11 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 			}
 		``` 
 		##### Parameters
-		> | name | type | data type |
-		> |------|------|-----------|
-		> | name | required | String |
-		> | email| required | String |
+		> | name | type | data type | description |
+		> |------|------|-----------|-------------|
+		> | id | not required | UUID | User's unique id(auto generated) | 
+		> | name | required | String | User's name |
+		> | email| required | String | User's email |
 
 		</details>
 
