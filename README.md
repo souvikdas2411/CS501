@@ -35,7 +35,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 		</details>
 	
 	- `GET /trips`
-		<details>
+		<details><summary>Example schema</summary>
 
 		```json
 			[
@@ -51,7 +51,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 		</details>
 
 	- `GET /user/:id`
-		<details>
+		<details><summary>Example schema</summary>
 
 		```json
 			{
@@ -63,7 +63,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 		</details>
 
 	- `GET user/:id/travel-buddies`
-		<details>
+		<details><summary>Example schema</summary>
 
 		```json
 			[
@@ -80,7 +80,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 - mongoDB implementaions(localhost)
 
 	- `GET /users`
-		<details>
+		<details><summary>Example schema</summary>
 
 		```json
 			[
@@ -95,7 +95,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 		</details>
 
 	- `GET /trips`
-		<details>
+		<details><summary>Example schema</summary>
 
 		```json
 			[
@@ -120,7 +120,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 		</details>
 
 	- `GET /user/:id`
-		<details>
+		<details><summary>Example schema</summary>
 
 		```json
 			{
@@ -133,7 +133,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 		</details>
 
 	- `GET user/:id/travel-buddies`
-		<details>
+		<details><summary>Example schema</summary>
 
 		```json
 			[
