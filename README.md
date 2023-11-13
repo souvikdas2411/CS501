@@ -8,7 +8,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 
 :file_folder: **sprint2** - mongoDB :leaves: & dynamoDB :zap: implementations(localhost)
 
-## Schemas
+## Overview
 
 - Supabase :snowman: implementations(localhost) 
 
@@ -90,6 +90,10 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 		    }
 		]
 		```
+		</details>
+
+		<details><summary>Schema</summary>
+
 		##### Schema
 		> | name | data type | description |
 		> |------|-----------|-------------|
@@ -123,6 +127,10 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 		    }
 		]
 		```
+		</details>
+
+		<details><summary>Schema</summary>
+
 		##### Schema
 		> | name | data type | description |
 		> |------|-----------|-------------|
