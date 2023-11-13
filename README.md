@@ -10,7 +10,6 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 		- `GET /trips` 
 		- `GET /user/:id` 
 		- `GET user/:id/travel-buddies`
-			- Returns a list of user IDs of all the users have gone on trips with this particular user.  That is, this endpoint returns a list of the given user’s travel buddies.
 - sprint2 
 	- mongoDB implementaions(localhost)
 		- `GET /users` 
