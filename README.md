@@ -45,6 +45,4 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 		    "name": "Sahana N H",
 		    "email": "sahananh@gmail.com"
 		  }
-		] 
-```
-	- 
+		]``` 
