@@ -5,4 +5,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 ## Folders
 
 - sprint1 
-> (Supabase implementaions - GET /users, /trips, /user/:id, user/:id/travel-buddies)
+> (Supabase implementaions(localhost) - GET /users, /trips, /user/:id, user/:id/travel-buddies)
+- sprint1 
+> (mongoDB implementaions(localhost) - GET /users, /trips, /user/:id, user/:id/travel-buddies - POST /createUser, /createTrip)
+> (dynamoDB implementaions(localhost) - GET /users, /trips, /user/:id, user/:id/travel-buddies - POST /createUser, /createTrip, /createRelation)
