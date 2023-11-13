@@ -32,7 +32,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 ## Schemas
 
 - _Supabase implementaions(localhost)_
-<details> 
+
 	- `GET /users`
 	```json
 	[
@@ -68,4 +68,4 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 	  "email": "sahananh@gmail.com"
 	}
 	```
-</details>
+	- ``
