@@ -7,10 +7,10 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 - sprint1 
 	- Supabase implementaions(localhost) 
 		- `GET /users`
-			- `[{"id": "52d5d3de-9e54-4847-a56d-540f1a30e4e6","name": "Souvik Das","email": "dassou@oregonstate.edu"}]`
 		- `GET /trips` 
 		- `GET /user/:id` 
 		- `GET user/:id/travel-buddies`
+			- Returns a list of user IDs of all the users have gone on trips with this particular user.  That is, this endpoint returns a list of the given user’s travel buddies.
 - sprint2 
 	- mongoDB implementaions(localhost)
 		- `GET /users` 
