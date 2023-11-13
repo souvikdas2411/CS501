@@ -1,6 +1,7 @@
 ## CS501 - Fall 2023
 
-This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Braynen. :mortar_board: 
+This is the CS501 Research Credit Fall 2023 repository.
+Advisor - Will Braynen
 
 ## Folders
  
