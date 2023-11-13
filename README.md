@@ -36,35 +36,38 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 	- `GET /users`
 		<details>
 
-	```json
-		[
-		  {
-		    "id": "52d5d3de-9e54-4847-a56d-540f1a30e4e6",
-		    "name": "Souvik Das",
-		    "email": "dassou@oregonstate.edu"
-		  },
-		  {
-		    "id": "f1b14023-6fed-4f75-800f-f16231420c4b",
-		    "name": "Sahana N H",
-		    "email": "sahananh@gmail.com"
-		  }
-		]
-	```
-	</details>
+		```json
+			[
+			  {
+			    "id": "52d5d3de-9e54-4847-a56d-540f1a30e4e6",
+			    "name": "Souvik Das",
+			    "email": "dassou@oregonstate.edu"
+			  },
+			  {
+			    "id": "f1b14023-6fed-4f75-800f-f16231420c4b",
+			    "name": "Sahana N H",
+			    "email": "sahananh@gmail.com"
+			  }
+			]
+		```
+		</details>
 
 	
 	- `GET /trips`
-	```json
-	[
-	  {
-	    "id": "2100e8ef-07a4-4935-9c65-d8ddc4d25aa2",
-	    "name": "City of Joy",
-	    "destination": "Kolkata",
-	    "start date": "2023-10-25",
-	    "end date": "2023-10-31"
-	  }
-	]
-	```
+		<details>
+
+		```json
+		[
+		  {
+		    "id": "2100e8ef-07a4-4935-9c65-d8ddc4d25aa2",
+		    "name": "City of Joy",
+		    "destination": "Kolkata",
+		    "start date": "2023-10-25",
+		    "end date": "2023-10-31"
+		  }
+		]
+		```
+		</details>
 	- `GET /user/:id`
 	```json
 	{
