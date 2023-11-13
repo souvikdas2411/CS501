@@ -10,7 +10,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 
 ## Schemas
 
-- :snowman: Supabase implementations(localhost) 
+- Supabase :snowman: implementations(localhost) 
 
 	- `GET /users` :busts_in_silhouette: 
 		<details><summary>Example value</summary>
@@ -75,7 +75,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 		```
 		</details>
 
-- :leaves: mongoDB implementations(localhost)
+- mongoDB :leaves: implementations(localhost)
 
 	- `GET /users` :busts_in_silhouette:
 		<details><summary>Example value</summary>
@@ -192,7 +192,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 
 		</details>
 
-- :zap: dynamoDB implementations(localhost)
+- dynamoDB :zap: implementations(localhost)
 
 	- `POST /createUser`
 		<details><summary>Example value</summary>
