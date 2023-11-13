@@ -13,7 +13,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 
 ### Schemas
 
-- Supabase implementations(localhost)
+- Supabase implementations(localhost) :snowflake:
 
 	- `GET /users` 
 		<details><summary>Example schema</summary>
