@@ -4,14 +4,14 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 
 ## Folders
 
-- sprint1 
+- **sprint1** 
 	- Supabase implementaions(localhost) 
 		- `GET /users`
 		- `GET /trips` 
 		- `GET /user/:id` 
 		- `GET user/:id/travel-buddies`
-		
-- sprint2 
+
+- **sprint2** 
 	- mongoDB implementaions(localhost)
 		- `GET /users` 
 		- `GET /trips`
