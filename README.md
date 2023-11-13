@@ -6,28 +6,28 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 
 - **sprint1** 
 	- _Supabase implementaions(localhost)_ 
-		- `GET /users` <desc>Description</desc>
-		- `GET /trips` <details>Description</details>
-		- `GET /user/:id`<details>Description</details>
-		- `GET user/:id/travel-buddies`<details>Description</details>
+		- `GET /users`<details><summary>Description</summary>></details>
+		- `GET /trips`<details><summary>Description</summary>></details>
+		- `GET /user/:id`<details><summary>Description</summary>></details>
+		- `GET user/:id/travel-buddies`<details><summary>Description</summary>></details>
 
 - **sprint2** 
 	- _mongoDB implementaions(localhost)_
-		- `GET /users`<details>Description</details> 
-		- `GET /trips`<details>Description</details>
-		- `GET /user/:id`<details>Description</details>
-		- `GET user/:id/travel-buddies`<details>Description</details>
-		- `POST /createUser`<details>Description</details> 
-		- `POST /createTrip`<details>Description</details>
+		- `GET /users`<details><summary>Description</summary>></details> 
+		- `GET /trips`<details><summary>Description</summary>></details>
+		- `GET /user/:id`<details><summary>Description</summary>></details>
+		- `GET user/:id/travel-buddies`<details><summary>Description</summary>></details>
+		- `POST /createUser`<details><summary>Description</summary>></details> 
+		- `POST /createTrip`<details><summary>Description</summary>></details>
 	
 	- _dynamoDB implementaions(localhost)_
-		- `GET /users`<details>Description</details> 
-		- `GET /trips`<details>Description</details>
-		- `GET /user/:id`<details>Description</details>
-		- `GET user/:id/travel-buddies`<details>Description</details>
-		- `POST /createUser`<details>Description</details> 
-		- `POST /createTrip`<details>Description</details>
-		- `POST /createRelation`<details>Description</details>
+		- `GET /users`<details><summary>Description</summary>></details> 
+		- `GET /trips`<details><summary>Description</summary>></details>
+		- `GET /user/:id`<details><summary>Description</summary>></details>
+		- `GET user/:id/travel-buddies`<details><summary>Description</summary>></details>
+		- `POST /createUser`<details><summary>Description</summary>></details> 
+		- `POST /createTrip`<details><summary>Description</summary>></details>
+		- `POST /createRelation`<details><summary>Description</summary>></details>
 
 ## Schemas
 
