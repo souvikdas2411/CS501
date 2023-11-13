@@ -203,7 +203,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 - dynamoDB :zap: implementations(localhost)
 
 	- `POST /createUser`
-		<details><summary>Example value</summary>
+		<details><summary>Example body</summary>
 
 		```json
 		{
@@ -221,7 +221,7 @@ This is the CS501 Research Credit Fall 2023 repository lead by Prof. Will Brayne
 		</details>
 
 	- `POST /createTrip`
-		<details><summary>Example value</summary>
+		<details><summary>Example body</summary>
 
 		```json
 		{
