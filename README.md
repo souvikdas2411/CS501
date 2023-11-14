@@ -1,6 +1,6 @@
 ## CS501 - Fall 2023
 
-:exclamation::exclamation::exclamation: Please switch to `test` branch for latest README updates. :exclamation::exclamation::exclamation:
+Please switch to `test` branch for latest README updates:exclamation::exclamation::exclamation:
 
 This is the CS501 Research Credit Fall 2023 repository.<br>
 Advisor - Will Braynen<br>
