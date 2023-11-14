@@ -6,8 +6,6 @@ This is the CS501 Research Credit Fall 2023 repository.<br>
 Advisor - Will Braynen<br>
 :snowman: :leaves: :zap:
 
-<img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/crown.svg" width="50" height="50">
-
 ## Folders
 
 <!-- SPRINT1 - SUPABASE  -->
