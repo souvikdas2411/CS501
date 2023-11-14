@@ -294,7 +294,7 @@ Advisor - Will Braynen<br>
 
 - Endpoints
 
-	- `POST /createUser`
+	- `POST /createUser` :pencil2:
 		<details><summary>Example body</summary>
 
 		```json
@@ -312,7 +312,7 @@ Advisor - Will Braynen<br>
 
 		</details>
 
-	- `POST /createTrip`
+	- `POST /createTrip` :pencil2:
 		<details><summary>Example body</summary>
 
 		```json
@@ -332,7 +332,7 @@ Advisor - Will Braynen<br>
 
 		</details>
 
-	- `POST /createRelation`
+	- `POST /createRelation` :pencil2:
 		<details><summary>Example body</summary>
 
 		```json
