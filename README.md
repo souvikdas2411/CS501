@@ -81,6 +81,11 @@ Advisor - Will Braynen<br>
 		  "email": "sahananh@gmail.com"
 		}
 		```
+		##### Parameters
+		> | name | type | data type | description |
+		> |------|------|-----------|-------------|
+		> | id | required | ObjectId | User's unique id | 
+
 		</details>
 
 		<details><summary>Schema</summary>
@@ -107,6 +112,11 @@ Advisor - Will Braynen<br>
 		  }
 		]
 		```
+		##### Parameters
+		> | name | type | data type | description |
+		> |------|------|-----------|-------------|
+		> | id | required | ObjectId | User's unique id | 
+		
 		</details>	
 
 		<details><summary>Schema</summary>
