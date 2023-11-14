@@ -4,7 +4,7 @@ const { Schema } = mongoose;
 
 const app = express();
 const port = 3000; 
-const mongoURI = '';
+const mongoURI = 'mongodb+srv://souvikdas2411:<password>@cs501.qvt8syw.mongodb.net/';
 
 async function connectToDatabase() {
   try {
