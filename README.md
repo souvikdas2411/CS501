@@ -29,6 +29,16 @@ Advisor - Will Braynen<br>
 		  }
 		]
 		```
+		</details>
+
+		<details><summary>Schema</summary>
+
+		##### Schema
+		> | name | data type | description |
+		> |------|-----------|-------------|
+		> | id | UUID | User's unique id(auto generated) | 
+		> | name | String | User's name |
+		> | email| String | User's email |
 
 		</details>
 	
@@ -48,6 +58,19 @@ Advisor - Will Braynen<br>
 		```
 		</details>
 
+		<details><summary>Schema</summary>
+
+		##### Schema
+		> | name | data type | description |
+		> |------|-----------|-------------|
+		> | id | UUID | User's unique id(auto generated) | 
+		> | name | String | Trip name |
+		> | destination | String | Trip destination |
+		> | start_date | Date(yyyy/mm/dd) | Trip start date |
+		> | end_date | Date(yyyy/mm/dd) | Trip end date |
+
+		</details>
+
 	- `GET /user/:id`:bust_in_silhouette:
 		<details><summary>Example value</summary>
 
@@ -58,6 +81,17 @@ Advisor - Will Braynen<br>
 		  "email": "sahananh@gmail.com"
 		}
 		```
+		</details>
+
+		<details><summary>Schema</summary>
+
+		##### Schema
+		> | name | data type | description |
+		> |------|-----------|-------------|
+		> | id | UUID | User's unique id(auto generated) | 
+		> | name | String | User's name |
+		> | email| String | User's email |
+
 		</details>
 
 	- `GET /user/:id/travel-buddies` :couple:
@@ -74,6 +108,15 @@ Advisor - Will Braynen<br>
 		]
 		```
 		</details>	
+
+		<details><summary>Schema</summary>
+
+		##### Schema
+		> | name | data type | description |
+		> |------|-----------|-------------|
+		> | user_id | UUID | User's unique id(auto generated) | 
+
+		</details>
 </details> 
 
 <details><summary>:file_folder: sprint2 - mongoDB :leaves: & dynamoDB :zap: implementations(localhost)</summary>
