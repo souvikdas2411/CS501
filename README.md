@@ -4,9 +4,6 @@ This is the CS501 Research Credit Fall 2023 repository.<br>
 Advisor - Will Braynen<br>
 :snowman: :leaves: :zap:
 
-Notes: 
-- All POST methods include unique ID enforced.
-
 ## Folders
  
 <details><summary>:file_folder: sprint1 - Supabase :snowman: implementations(localhost)</summary>
@@ -287,7 +284,8 @@ Notes:
 		</details>
 </details>
 
+### Notes
 
-
+:exclamation: All POST methods enforce unique id checks. 
 
 
