@@ -13,7 +13,6 @@ Advisor - Will Braynen<br>
 	<summary>:file_folder: sprint1 - Supabase :snowman: implementations(localhost)</summary>
 
 - Endpoints 
-
 	- `GET /users` :busts_in_silhouette: 
 		<details><summary>Example value</summary>
 
