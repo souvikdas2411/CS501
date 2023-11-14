@@ -473,7 +473,8 @@ Advisor - Will Braynen<br>
 
 ## Notes
 
-:exclamation: All `POST` methods enforce unique id checks.<br><br>
+:exclamation: All `POST` methods enforce unique id checks.<br>
+:exclamation: `GET user/:id/travel-buddies` response is populated for debugging purposes, ideally we want to just return the travel buddie(s) id(s)<br><br>
 
 :email: dassou@oregonstate.edu
 
