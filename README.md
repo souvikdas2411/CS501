@@ -130,7 +130,8 @@ Advisor - Will Braynen<br>
 </details> 
 
 <details><summary>:file_folder: sprint2 - mongoDB :leaves: & dynamoDB :zap: implementations(localhost)</summary>
-	<details><summary>:file_folder: mongoDB :leaves: implementations(localhost)</summary>
+	
+<details><summary>:file_folder: mongoDB :leaves: implementations(localhost)</summary>
 
 - Endpoints
 
@@ -282,8 +283,9 @@ Advisor - Will Braynen<br>
 		</details>	
 </details>
 
+<details><summary>:file_folder: dynamoDB :zap: implementations(localhost)</summary>
 
-- dynamoDB :zap: implementations(localhost)
+- Endpoints
 
 	- `POST /createUser`
 		<details><summary>Example body</summary>
@@ -340,6 +342,8 @@ Advisor - Will Braynen<br>
 		> | user_id | required | [UUID] | An array of user_id of the users who went on the trip | 
 
 		</details>
+</details>
+
 </details>
 
 ## Notes
