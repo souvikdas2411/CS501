@@ -294,7 +294,7 @@ Advisor - Will Braynen<br>
 
 - Endpoints
 
-	- `POST /createUser`
+	- `POST /createUser` :diamond_shape_with_a_dot_inside:
 		<details><summary>Example body</summary>
 
 		```json
@@ -312,7 +312,7 @@ Advisor - Will Braynen<br>
 
 		</details>
 
-	- `POST /createTrip`
+	- `POST /createTrip` :diamond_shape_with_a_dot_inside:
 		<details><summary>Example body</summary>
 
 		```json
@@ -332,7 +332,7 @@ Advisor - Will Braynen<br>
 
 		</details>
 
-	- `POST /createRelation`
+	- `POST /createRelation` :diamond_shape_with_a_dot_inside:
 		<details><summary>Example body</summary>
 
 		```json
@@ -473,7 +473,8 @@ Advisor - Will Braynen<br>
 
 ## Notes
 
-:exclamation: All `POST` methods enforce unique id checks.<br><br>
+:exclamation: All `POST` methods enforce unique id checks.<br>
+:exclamation: `GET user/:id/travel-buddies` response is populated for debugging purposes, ideally we want to just return the travel buddie(s) id(s).<br><br>
 
 :email: dassou@oregonstate.edu
 
