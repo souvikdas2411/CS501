@@ -130,9 +130,9 @@ Advisor - Will Braynen<br>
 </details> 
 
 <details><summary>:file_folder: sprint2 - mongoDB :leaves: & dynamoDB :zap: implementations(localhost)</summary>
-<details>
+<details><summary>:file_folder: mongoDB :leaves: implementations(localhost)</summary>
 
-- mongoDB :leaves: implementations(localhost)
+- Endpoints
 
 	- `GET /users` :busts_in_silhouette:
 		<details><summary>Example value</summary>
