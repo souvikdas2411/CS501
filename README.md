@@ -294,7 +294,7 @@ Advisor - Will Braynen<br>
 
 - Endpoints
 
-	- `POST /createUser` :pencil2:
+	- `POST /createUser` :diamond_shape_with_a_dot_inside:
 		<details><summary>Example body</summary>
 
 		```json
@@ -312,7 +312,7 @@ Advisor - Will Braynen<br>
 
 		</details>
 
-	- `POST /createTrip` :pencil2:
+	- `POST /createTrip` :diamond_shape_with_a_dot_inside:
 		<details><summary>Example body</summary>
 
 		```json
@@ -332,7 +332,7 @@ Advisor - Will Braynen<br>
 
 		</details>
 
-	- `POST /createRelation` :pencil2:
+	- `POST /createRelation` :diamond_shape_with_a_dot_inside:
 		<details><summary>Example body</summary>
 
 		```json
