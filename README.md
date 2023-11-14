@@ -341,9 +341,7 @@ Advisor - Will Braynen<br>
 
 ## Notes
 
-:exclamation: All `POST` methods enforce unique id checks.<br>
-:exclamation: Pushing directly to the `main` branch is locked.<br><br> 
+:exclamation: All `POST` methods enforce unique id checks.<br><br>
 
-
-:email: - dassou@oregonstate.edu
+:email: dassou@oregonstate.edu
 
