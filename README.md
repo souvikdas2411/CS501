@@ -345,5 +345,5 @@ Advisor - Will Braynen<br>
 :exclamation: Pushing directly to the `main` branch is locked.<br><br> 
 
 
-:email: dassou@oregonstate.edu
+:email: - dassou@oregonstate.edu
 
