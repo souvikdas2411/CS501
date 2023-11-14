@@ -286,4 +286,8 @@ Advisor - Will Braynen<br>
 		</details>
 </details>
 
+## Notes
+
+:exclamation: All `POST` methods enforce unique id checks. 
+
 
