@@ -13,7 +13,7 @@ Advisor - Will Braynen<br>
 	<summary>:file_folder: sprint1 - Supabase :snowman: implementations(localhost)</summary>
 
 - Endpoints
- 
+
 	- `GET /users` :busts_in_silhouette: 
 		<details><summary>Example value</summary>
 
@@ -474,7 +474,8 @@ Advisor - Will Braynen<br>
 ## Notes
 
 :exclamation: All `POST` methods enforce unique id checks.<br>
-:exclamation: `GET user/:id/travel-buddies` response is populated for debugging purposes, ideally we want to just return the travel buddie(s) id(s).<br><br>
+:exclamation: `GET user/:id/travel-buddies` response is populated for debugging purposes, ideally we want to just return the travel buddie(s) id(s).<br>
+:exclamation: DynamoDB access keys have been deactivated.<br><br>
 
 :email: dassou@oregonstate.edu
 
