@@ -282,8 +282,8 @@ Advisor - Will Braynen<br>
 		> | name | data type | description |
 		> |------|-----------|-------------|
 		> | id | ObjectId | Relation's unique id(auto generated) | 
-		> | trip_id | JSON | Refer to `\trips` schema |
-		> | user_id| [JSON] | Refer to `\users` or `user` schema |
+		> | trip_id | JSON | Refer to `/trips` schema |
+		> | user_id| [JSON] | Refer to `/users` or `user` schema |
 
 		</details>	
 </details>
