@@ -475,7 +475,8 @@ Advisor - Will Braynen<br>
 
 :exclamation: All `POST` methods enforce unique id checks.<br>
 :exclamation: `GET user/:id/travel-buddies` response is populated for debugging purposes, ideally we want to just return the travel buddie(s) id(s).<br>
-:exclamation: DynamoDB access keys have been deactivated.<br><br>
+:exclamation: DynamoDB access keys have been deactivated.<br>
+:exclamation: Data is inserted directly for Supabase :snowman:, Functions are used to insert data to mongoDB :leaves:, `POST` endpoints are used to insert data to dynamoDB:zap:.<br><br>
 
 :email: dassou@oregonstate.edu
 
